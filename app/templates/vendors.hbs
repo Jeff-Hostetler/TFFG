@@ -1,0 +1,15 @@
+<div class="siteBody siteTop">
+  <h3>Vendors</h3>
+  <hr>
+
+  {{#each vendor in model}}
+    <div class="tableRow">
+      {{#link-to 'vendor' vendor}}
+        {{vendor.name}}
+      {{/link-to}}
+    </div>
+
+  {{/each}}
+</div>
+
+{{outlet}}

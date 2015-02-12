@@ -1,0 +1,15 @@
+<div class="siteBody siteTop">
+  <h3>Employees</h3>
+  <hr>
+
+  {{#each employee in model}}
+    <div class="tableRow">
+      {{#link-to 'employee' employee}}
+      {{employee.firstName}} {{employee.lastName}}
+      {{/link-to}}
+    </div>
+
+  {{/each}}
+</div>
+
+{{outlet}}

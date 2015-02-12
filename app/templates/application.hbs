@@ -1,3 +1,28 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<div class="sideBar">
+  <div class="sideBarLink topSideBarLink">
+    {{#link-to 'employees'}}
+      Employees
+    {{/link-to}}
+  </div>
+  <div class="sideBarLink">
+    {{#link-to 'schedule'}}
+      Schedule
+    {{/link-to}}
+  </div>
+  <div class="sideBarLink">
+    {{#link-to 'vendors'}}
+      Vendors
+    {{/link-to}}
+  </div>
+  <div class="sideBarLink">
+    {{#link-to 'distributors'}}
+      Distributors
+    {{/link-to}}
+  </div>
+</div>
+
+<div class="topBar">
+  <img src="images/roots.png" alt="rootsPic" />
+</div>
 
 {{outlet}}

@@ -1,0 +1,15 @@
+<div class="siteBody siteTop">
+  <h3>Distributors</h3>
+  <hr>
+
+  {{#each distributor in model}}
+    <div class="tableRow">
+      {{#link-to 'distributor' distributor}}
+        {{distributor.name}}
+      {{/link-to}}
+    </div>
+
+  {{/each}}
+</div>
+
+{{outlet}}

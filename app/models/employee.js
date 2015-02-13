@@ -5,5 +5,6 @@ export default DS.Model.extend({
   lastName: DS.attr('string'),
   email: DS.attr('string'),
   phoneNumber: DS.attr('string'),
+  position: DS.attr('string'),
   shifts: DS.hasMany('shift'),
 });

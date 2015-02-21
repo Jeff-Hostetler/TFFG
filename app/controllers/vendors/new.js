@@ -10,14 +10,12 @@ export default Ember.Controller.extend({
           return;
         }
         var that = this;
-        var post = this.store.createRecord('vendor', {name: name, address: address});
+        var vendor = this.store.createRecord('vendor', {name: name, address: address});
         this.set('vendorName', '');
         this.set('vendorAddress', '');
-        post.save().then(function(){
+        vendor.save().then(function(){
           that.transitionToRoute('vendors');
         });
       }
-
     }
-
 });

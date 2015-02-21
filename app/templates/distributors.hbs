@@ -1,5 +1,14 @@
 <div class="siteBody siteTop">
-  <h3>Distributors</h3>
+  <div class="header">
+    <div class="new-link">
+
+        {{#link-to 'distributors.new'}}
+          New Distributor
+        {{/link-to}}
+
+    </div>
+    <h3>Distributors</h3>
+  </div>
   <hr>
 
   {{#each distributor in model}}

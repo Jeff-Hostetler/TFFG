@@ -15,10 +15,16 @@ module('Integration - Application/sidebar', {
 
 test("Side bar has links to groups we are showing", function() {
   visit('/');
-  equal(find('.sideBarLink').length, 4);
+
+  andThen(function() {
+    equal(find('.sideBarLink').length, 4);
+  });
 });
 
 test("topBar has an image", function() {
   visit('/');
-  equal(find('.topBar img').length, 1);
+  
+  andThen(function() {
+    equal(find('.topBar img').length, 1);
+  });
 });

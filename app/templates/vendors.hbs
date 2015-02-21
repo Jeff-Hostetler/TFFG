@@ -1,5 +1,15 @@
 <div class="siteBody siteTop">
-  <h3>Vendors</h3>
+  <div class="header">
+    <div class="new-link">
+
+        {{#link-to 'vendors.new'}}
+          New Vendor
+        {{/link-to}}
+
+    </div>
+    <h3>Vendors</h3>
+  </div>
+
   <hr>
 
   {{#each vendor in model}}
@@ -11,5 +21,6 @@
 
   {{/each}}
 </div>
+
 
 {{outlet}}

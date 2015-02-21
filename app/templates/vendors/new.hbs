@@ -1,0 +1,11 @@
+<div class="siteBody">
+  <h3>New Vendor</h3>
+
+  {{textarea placeholder="Name: ex. 'Acme Co.'" value=vendorName}}
+  <div class="textBox">
+    {{textarea placeholder="Address: ex.'123 Fake St'" value=vendorAddress}}
+  </div>
+  <div class="create-button">
+    <button {{action 'newVendor'}}>Save Vendor</button>
+  </div>
+</div>

@@ -29,3 +29,43 @@ padding-top: 60px;
   padding: 15px;
   color: red;
 }
+.header{
+  h3{
+    display: inline;
+  }
+}
+
+.new-link{
+  right: 10%;
+  text-align: right;
+  float: right;
+
+}
+
+textarea{
+  width: 46%;
+  box-sizing: border-box;
+  border: 2px solid white;
+  height: 100px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #C6C6D1;
+  color: black;
+  font-size: 1.5em;
+  font-family: 'Handlee', cursive;
+  padding: 10px;
+  float: left;
+}
+
+button {
+  width: 10%;
+  height: 40px;
+  border-radius: 10px;
+  font-family: 'Handlee', cursive;
+}
+.create-button > button{
+  margin: 0 auto;
+  display: block;
+}

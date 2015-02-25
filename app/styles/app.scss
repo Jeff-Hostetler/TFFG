@@ -8,6 +8,13 @@ html, body {
 .siteTop{
 padding-top: 60px;
 }
+.siteWelcome{
+  background-image: url('/images/symbol.jpg');
+  background-size: cover;
+  height: 800px;
+  background-position: 10% 100%;
+
+}
 .siteBody{
   padding-left: 10%;
 

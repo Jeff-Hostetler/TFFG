@@ -5,7 +5,7 @@
   {{#each shift in model}}
     <div class="tableRow">
       {{#link-to 'shift' shift}}
-      {{shift.employee.firstName}} {{shift.employee.lastName}}: {{shift.startTime}} unil {{shift.endTime}}
+      {{shift.employee.firstName}} {{shift.employee.lastName}}: {{ date-and-time shift.startTime}} unil {{ date-and-time shift.endTime}}
       {{/link-to}}
     </div>
 
